@@ -12,7 +12,7 @@ class URLShortenerTest {
 
 		String encodedUrl = urlShortener.encode(url);
 		String decodedUrl = urlShortener.decode(encodedUrl);
-
+		
 		assertTrue(encodedUrl.startsWith(urlShortener.getPrefix()));
 		assertEquals(url, decodedUrl);
 	}
